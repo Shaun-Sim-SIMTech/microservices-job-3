@@ -17,7 +17,7 @@
     }
 
     function fetchBookingAPI() {
-        fetch('https://localhost:7232/swagger')
+        fetch('https://localhost:7232/swagger/v1/swagger.json')
             .then(response => response.json())
             .then(data => console.log(data));
     }
